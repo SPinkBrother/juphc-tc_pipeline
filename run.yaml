@@ -4,7 +4,7 @@ metadata:
   generateName: juphc-tc-pipeline-run-
 spec:
   serviceAccountName: pipeline 
-  piplineRef:
+  pipelineRef:
     name: juphc-tc-pipeline
   params:
     - name: repo-url
@@ -16,7 +16,7 @@ spec:
   workspaces:
   - name: pipeline-workspace
     persistentVolumeClaim:
-      claimName: piplinerun-pvc
+      claimName: pipelinerun-pvc
   - name: dockerconfig-ws
     secret:
       secretName: docker-reg-creds    
