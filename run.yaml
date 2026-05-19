@@ -1,9 +1,9 @@
 apiVersion: tekton.dev/v1beta1
-kind: PiplineRun
+kind: PipelineRun
 metadata:
   generateName: juphc-tc-pipeline-run-
 spec:
-  serviceAccountName: pipline 
+  serviceAccountName: pipeline 
   piplineRef:
     name: juphc-tc-pipeline
   params:
